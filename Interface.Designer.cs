@@ -53,12 +53,14 @@
             this.textBox_Max_GPA = new System.Windows.Forms.TextBox();
             this.label_max_gpa = new System.Windows.Forms.Label();
             this.button_Add = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.Info_Panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // input_Name
             // 
-            this.input_Name.Location = new System.Drawing.Point(68, 43);
+            this.input_Name.Location = new System.Drawing.Point(80, 104);
             this.input_Name.Name = "input_Name";
             this.input_Name.Size = new System.Drawing.Size(164, 27);
             this.input_Name.TabIndex = 0;
@@ -66,7 +68,7 @@
             // label_Name
             // 
             this.label_Name.AutoSize = true;
-            this.label_Name.Location = new System.Drawing.Point(36, 46);
+            this.label_Name.Location = new System.Drawing.Point(48, 107);
             this.label_Name.Name = "label_Name";
             this.label_Name.Size = new System.Drawing.Size(26, 20);
             this.label_Name.TabIndex = 1;
@@ -75,7 +77,7 @@
             // label_BirthDay
             // 
             this.label_BirthDay.AutoSize = true;
-            this.label_BirthDay.Location = new System.Drawing.Point(22, 79);
+            this.label_BirthDay.Location = new System.Drawing.Point(34, 140);
             this.label_BirthDay.Name = "label_BirthDay";
             this.label_BirthDay.Size = new System.Drawing.Size(40, 20);
             this.label_BirthDay.TabIndex = 3;
@@ -83,7 +85,7 @@
             // 
             // input_BirthYear
             // 
-            this.input_BirthYear.Location = new System.Drawing.Point(68, 76);
+            this.input_BirthYear.Location = new System.Drawing.Point(80, 137);
             this.input_BirthYear.Name = "input_BirthYear";
             this.input_BirthYear.Size = new System.Drawing.Size(164, 27);
             this.input_BirthYear.TabIndex = 2;
@@ -91,7 +93,7 @@
             // label_GPA
             // 
             this.label_GPA.AutoSize = true;
-            this.label_GPA.Location = new System.Drawing.Point(25, 112);
+            this.label_GPA.Location = new System.Drawing.Point(37, 173);
             this.label_GPA.Name = "label_GPA";
             this.label_GPA.Size = new System.Drawing.Size(37, 20);
             this.label_GPA.TabIndex = 5;
@@ -99,7 +101,7 @@
             // 
             // input_GPA
             // 
-            this.input_GPA.Location = new System.Drawing.Point(68, 109);
+            this.input_GPA.Location = new System.Drawing.Point(80, 170);
             this.input_GPA.Name = "input_GPA";
             this.input_GPA.Size = new System.Drawing.Size(164, 27);
             this.input_GPA.TabIndex = 4;
@@ -278,19 +280,40 @@
             // 
             // button_Add
             // 
-            this.button_Add.Location = new System.Drawing.Point(87, 156);
+            this.button_Add.Location = new System.Drawing.Point(109, 215);
             this.button_Add.Name = "button_Add";
             this.button_Add.Size = new System.Drawing.Size(94, 29);
             this.button_Add.TabIndex = 7;
-            this.button_Add.Text = "button1";
+            this.button_Add.Text = "เพิ่มข้อมูล";
             this.button_Add.UseVisualStyleBackColor = true;
             this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
             // 
-            // Form1
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(393, 181);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(26, 20);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "ชื่อ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(67, 23);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(173, 45);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "โปรแกรมหมี";
+            // 
+            // Interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 383);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button_Add);
             this.Controls.Add(this.Info_Panel);
             this.Controls.Add(this.label_GPA);
@@ -301,8 +324,8 @@
             this.Controls.Add(this.input_Name);
             this.MaximumSize = new System.Drawing.Size(830, 430);
             this.MinimumSize = new System.Drawing.Size(830, 430);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Interface";
+            this.Text = "CourseInfo";
             this.Info_Panel.ResumeLayout(false);
             this.Info_Panel.PerformLayout();
             this.ResumeLayout(false);
@@ -337,5 +360,7 @@
         private Button button_Add;
         private Label visible_gpa;
         private Label visible_name;
+        private Label label5;
+        private Label label6;
     }
 }

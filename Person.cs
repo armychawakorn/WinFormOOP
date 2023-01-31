@@ -14,18 +14,26 @@ namespace WinFormOOP
 
         public Person SetData(EDataType type, object value)
         {
-            switch(type){
-                case EDataType.Name:
-                    _Name = value.ToString();
-                    break;
-                case EDataType.BirthYear:
-                    Birth_Year = int.Parse(value.ToString());
-                    break;
-                case EDataType.GPA:
-                    GPA = float.Parse(value.ToString());
-                    break;
-                default:
-                    break;
+            try
+            {
+                switch (type)
+                {
+                    case EDataType.Name:
+                        _Name = value.ToString();
+                        break;
+                    case EDataType.BirthYear:
+                        Birth_Year = int.Parse(value.ToString());
+                        break;
+                    case EDataType.GPA:
+                        GPA = float.Parse(value.ToString());
+                        break;
+                    default:
+                        break;
+                }
+            }
+            catch
+            {
+                return null;
             }
             return this;
         }

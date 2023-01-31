@@ -32,7 +32,7 @@ namespace WinFormOOP
                 );
 
             // Section Show in studnet info
-            foreach(Person Student in this._class.GetData())
+            foreach (Person Student in this._class.GetData())
             {
                 Course_List.Items.Add(Student.GetData()["Name"]);
             }
