@@ -8,7 +8,7 @@ namespace WinFormOOP
 {
     public class Person
     {
-        private string _Name { get; set; }
+        private string Name { get; set; }
         private int Birth_Year { get; set; }
         private float GPA { get; set; }
 
@@ -19,7 +19,7 @@ namespace WinFormOOP
                 switch (type)
                 {
                     case EDataType.Name:
-                        _Name = value.ToString();
+                        Name = value.ToString();
                         break;
                     case EDataType.BirthYear:
                         Birth_Year = int.Parse(value.ToString());
@@ -42,7 +42,7 @@ namespace WinFormOOP
             int Age = ((DateTime.Now.Year + 543) - Birth_Year);
             return new Dictionary<string, string>()
             {
-                { "Name", this._Name },
+                { "Name", this.Name },
                 { "BirthYear", this.Birth_Year.ToString() },
                 { "Age", Age.ToString() },
                 { "GPA", this.GPA.ToString() },
