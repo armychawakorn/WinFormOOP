@@ -53,7 +53,6 @@
             this.textBox_Max_GPA = new System.Windows.Forms.TextBox();
             this.label_max_gpa = new System.Windows.Forms.Label();
             this.button_Add = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Info_Panel.SuspendLayout();
             this.SuspendLayout();
@@ -288,15 +287,6 @@
             this.button_Add.UseVisualStyleBackColor = true;
             this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(393, 181);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(26, 20);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "ชื่อ";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -313,7 +303,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 383);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.button_Add);
             this.Controls.Add(this.Info_Panel);
             this.Controls.Add(this.label_GPA);
@@ -360,7 +349,6 @@
         private Button button_Add;
         private Label visible_gpa;
         private Label visible_name;
-        private Label label5;
         private Label label6;
     }
 }
