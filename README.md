@@ -1,4 +1,5 @@
 # WinFormOOP
+![alt text](https://github.com/armychawakorn/WinFormOOP/blob/main/ClassDiagramCD.png?raw=true)
 ![alt text](https://github.com/armychawakorn/WinFormOOP/blob/main/Class%20diagram.jpg?raw=true)
 
 ##จุ๊จุ๊ๆๆ
